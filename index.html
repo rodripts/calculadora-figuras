@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <title>Calculadora de area y perimetro</title>
+</head>
+<body>
+    <h1>Calculadora de area y perimetro</h1>
+    <section class="cuadrado">
+        <h2>Cuadrado</h2>
+        <label for="inputCuadrado">Ingresa el valor de un lado del cuadrado</label>
+        <form action="">
+            <input type="number" id="inputCuadrado">
+            <div class="botones">
+                <button type="button" onclick="areaCuadradoInput()" >Calcular area</button>
+                <button type="button" onclick="perimetroCuadradoInput()">Calcular perimetro</button>
+            </div>
+            <p id="inputResult"></p>
+        </form>
+    </section>
+    <script src="figuras.js"></script>
+</body>
+</html>
