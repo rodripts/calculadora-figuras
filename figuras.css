@@ -1,14 +1,19 @@
-/* font-family: 'Oswald', sans-serif; */
+:root {
+    --color-naranja: #ff8000;
+    --color-fondo: #fff5ee;
+
+    --fuente1: 'Oswald', sans-serif;
+}
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #fff5ee;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente1);
 }
 header {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     padding-bottom: 20px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -17,54 +22,65 @@ h1 {
     font-size: 60px;
     margin: 20px;
 }
+input {
+    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.16);
+    margin: 25px 0;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+}
+label {
+    font-weight: lighter;
+    font-size: 18px;
+}
+button {
+    font-family: var(--fuente1);
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.69);
+    margin: 0 5px;
+    padding: 0 12px;
+    background-color: var(--color-naranja);
+    color: white;
+    font-size: 15px;
+    transition: .2s;
+}
+button:active {
+    height: 35px;
+}
+p {
+    margin: 30px 0 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: var(--fuente1);
+}
 /* ____________ CUADRADO ______________ */
 .cuadrado {
     width: 80%;
     padding: 10px;
     margin: 0 auto;
-    background-color: #E5150B;
-    color: white;
+    background-color: white;
     text-align: center;
     box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.69);
     border-radius: 20px;
 }
 .cuadrado h2 {
     font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-}
-.cuadrado label {
-    font-size: 17px;
-}
-.cuadrado form input {
-    width: 70%;
-    margin: 10px auto;
-    height: 25px;
-    border-radius: 5px;
-    border: none;
-
 }
 .cuadrado .botones {
     margin: 5px 0;
     display: flex;
     justify-content: center;  
 }
-.botones button {
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.69);
-    margin: 0 5px;
-    background-color: #536773;
-    color: white;
-    font-size: 13px;
-}
 /* ____________ TRIANGULO ______________ */
 .triangulo {
     width: 80%;
     padding: 10px;
     margin:30px auto;
-    background-color: #E5150B;
-    color: white;
+    background-color: white;
     text-align: center;
     box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.69);
     border-radius: 20px;
@@ -73,21 +89,14 @@ h1 {
     display: block;
     margin: 10px 0;
 }
-.inputs input {
-    width: 70%;
-    margin: 10px auto;
-    height: 25px;
-    border-radius: 5px;
-    border: none;
-}
 /* ____________ RECTANGULO ______________ */
 .rectangulo {
     width: 80%;
     padding: 10px;
     padding-bottom: 30px;
     margin:30px auto;
-    background-color: #E5150B;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.69);
     border-radius: 20px;
